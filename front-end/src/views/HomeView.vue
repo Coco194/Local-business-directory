@@ -433,6 +433,7 @@
                 <li>24 hours or less response time</li>
                 <li>24 hours or less response time</li>
                 <li>24 hours or less response time</li>
+                <li>24 hours or less response time</li>
               </ul>
             </div>
             <div class="col-md-5 text-center">
