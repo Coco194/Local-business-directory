@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -40,27 +40,53 @@
     <router-link to="/about">About</router-link>
   </nav> -->
   <router-view/>
+
+      <!-- Start Footer Section -->
+      <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>LOGO</h1>
+            <h5>Business Directory</h5>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+          </ul>
+        </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+          </ul>
+        </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+          </ul>
+        </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+          </ul>
+        </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">© 2024 Business Directory</div>
+          <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
+        </div>
+      </div>
+     </footer>
+    <!-- End Footer Section -->
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
