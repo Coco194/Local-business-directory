@@ -424,16 +424,16 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-7">
-              <h2>Easily search and compare local businesses for your needs</h2>
+              <p style="font-size: 14px; color: #068006;">Simple</p>
+              <h1>Easily search and compare local businesses for your needs</h1>
               <p>
                 Our vast business directory helps all businesses and customers
                 connect together easily and get their work done.
               </p>
-              <ul>
-                <li>24 hours or less response time</li>
-                <li>24 hours or less response time</li>
-                <li>24 hours or less response time</li>
-                <li>24 hours or less response time</li>
+              <ul style="color: #068006;">
+                <li>✅ 24 hours or less response time</li>
+                <li>✅ Free consultation</li>
+                <li>✅ Professional services</li>
               </ul>
             </div>
             <div class="col-md-5 text-center">
@@ -444,6 +444,8 @@
       </section>
       <!-- End Features Section -->
 
+      <hr width="77.5%" style="margin: 8rem auto 8rem auto;">
+
       <!-- Start Features Section -->
       <section>
         <div class="container">
@@ -452,15 +454,16 @@
               <img class="img" width="80%" src="" alt="" />
             </div>
             <div class="col-md-7">
-              <h2>Easily search and compare local businesses for your needs</h2>
+              <p style="font-size: 14px; color: #804306;">Trustworthy</p>
+              <h1>Easily search and compare local businesses for your needs</h1>
               <p>
-                Our vast business directory helps all businesses and customers
-                connect together easily and get their work done.
+                We have partnered with some of the best service providers from all over 
+                the island with cheap but high quality service.
               </p>
-              <ul>
-                <li>24 hours or less response time</li>
-                <li>24 hours or less response time</li>
-                <li>24 hours or less response time</li>
+              <ul style="color: #804306;">
+                <li>✅ Certified professionals</li>
+                <li>✅ Compare reviews</li>
+                <li>✅ Maximized user satisfaction</li>
               </ul>
             </div>
           </div>
