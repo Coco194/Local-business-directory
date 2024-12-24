@@ -1,20 +1,27 @@
 <template>
     <!-- Start Header Section -->
     <section>
-     <div class="container">
+     <div class="container" style="margin-top: 5rem;">
        <div class="row align-items-center">
          <div class="col-md-6">
-           <h2 class="mb-2">
+           <h1>
              Search, compare, connect with local businesses for all your needs.
-           </h2>
-           <p class="mb-4">
+           </h1>
+           <p style="font-size: 1.125rem; color: #6a6a6a;">
              Your one stop place for all your local business needs whether
              you’re a customer or an employer.
            </p>
            <div class="input-group mb-3">
-             <VueSelect v-model="category" placeholder="Are you looking for...?" style="width: 300px;" :options="categories" label="category_name"></VueSelect>
-             <VueSelect v-model="location" placeholder="Location" style="width: 130px;" :options="cities" label="name_en"></VueSelect>
-             <button @click="search" style="border-radius: 3px !important;" class="btn btn-primary" type="button" id="button-addon2">
+             <input
+               type="text"
+               class="form-control"
+               placeholder="Are you looking for..."
+             />
+             <select name="" id="" class="form-control">
+               <option value="">Kegalle</option>
+               <option value="">Colombo</option>
+             </select>
+             <button class="btn btn-primary" type="button" id="button-addon2">
                Search
              </button>
            </div>
@@ -31,7 +38,7 @@
      </div>
    </section>
    <!-- End Header Section -->
-
+  
    <!-- Start Services Section -->
    <section class="gray-section">
      <div class="container">
@@ -64,16 +71,16 @@
      </div>
    </section>
    <!-- End Services Section -->
-
+  
    <!-- Start Categories Section -->
    <section
      id="carouselExampleControlsNoTouching"
      class="carousel slide mt-4"
      data-bs-touch="false"
    >
-     <div class="carousel-inner">
+     <div class="carousel-inner" style="margin-top: 10rem">
        <div class="container">
-         <h3>Professional services</h3>
+         <h2>Professional services</h2>
          <div class="carousel-item active">
            <div class="row row-cols-2 row-cols-md-4 g-4">
              <div class="col">
@@ -238,16 +245,16 @@
      </button>
    </section>
    <!-- End Categories Section -->
-
+  
    <!-- Start Business Section -->
    <section
      id="bisiness-section"
      class="carousel slide mt-4"
      data-bs-touch="false"
    >
-     <div class="carousel-inner">
+     <div class="carousel-inner"  style="margin-top: 10rem">
        <div class="container">
-         <h3>Popular businesses</h3>
+         <h2>Popular businesses</h2>
          <div class="carousel-item active">
            <div class="row row-cols-2 row-cols-md-4 g-4">
              <div class="col">
@@ -414,18 +421,19 @@
    <!-- End Business Section -->
      <!-- Start Features Section -->
      <section>
-       <div class="container">
+       <div class="container" style="margin-top: 10rem">
          <div class="row align-items-center">
            <div class="col-md-7">
-             <h2>Easily search and compare local businesses for your needs</h2>
-             <p>
+             <p style="font-size: 1rem; color: #068006;">Simple</p>
+             <h1>Easily search and compare local businesses for your needs</h1>
+             <p style="font-size: 1.125rem; color: #6a6a6a; margin-bottom: 2rem;">
                Our vast business directory helps all businesses and customers
                connect together easily and get their work done.
              </p>
-             <ul>
-               <li>24 hours or less response time</li>
-               <li>24 hours or less response time</li>
-               <li>24 hours or less response time</li>
+             <ul style="color: #068006; line-height: 1.75rem">
+               <li>✅ 24 hours or less response time</li>
+               <li>✅ Free consultation</li>
+               <li>✅ Professional services</li>
              </ul>
            </div>
            <div class="col-md-5 text-center">
@@ -435,7 +443,9 @@
        </div>
      </section>
      <!-- End Features Section -->
-
+  
+     <hr width="77.5%" style = "margin: 8rem auto 8rem auto; color: #8a8a8a;">
+  
      <!-- Start Features Section -->
      <section>
        <div class="container">
@@ -444,15 +454,16 @@
              <img class="img" width="80%" src="" alt="" />
            </div>
            <div class="col-md-7">
-             <h2>Easily search and compare local businesses for your needs</h2>
-             <p>
-               Our vast business directory helps all businesses and customers
-               connect together easily and get their work done.
+             <p style="font-size: 1rem; color: #804306;">Trustworthy</p>
+             <h1>Easily search and compare local businesses for your needs</h1>
+             <p style="font-size: 1.125rem; color: #6a6a6a; margin-bottom: 2rem;">
+               We have partnered with some of the best service providers from all over 
+               the island with cheap but high quality service.
              </p>
-             <ul>
-               <li>24 hours or less response time</li>
-               <li>24 hours or less response time</li>
-               <li>24 hours or less response time</li>
+             <ul style="color: #804306; line-height: 1.75rem">
+               <li>✅ Certified professionals</li>
+               <li>✅ Compare reviews</li>
+               <li>✅ Maximized user satisfaction</li>
              </ul>
            </div>
          </div>
@@ -461,7 +472,7 @@
      <!-- End Features Section -->
    <!-- Start FAQ Section -->
    <section class="container">
-     <div class="row">
+     <div class="row" style="margin: 10rem auto 10rem auto">
        <div class="col-md-5">
          <h3>Frequently asked questions</h3>
        </div>
@@ -477,7 +488,7 @@
                  aria-expanded="false"
                  aria-controls="collapseTwo"
                >
-                 Accordion Item #2
+                 Is there any hidden fee 
                </button>
              </h2>
              <div
@@ -486,15 +497,7 @@
                data-bs-parent="#accordionExample"
              >
                <div class="accordion-body">
-                 <strong>This is the second item's accordion body.</strong> It
-                 is hidden by default, until the collapse plugin adds the
-                 appropriate classes that we use to style each element. These
-                 classes control the overall appearance, as well as the showing
-                 and hiding via CSS transitions. You can modify any of this
-                 with custom CSS or overriding our default variables. It's also
-                 worth noting that just about any HTML can go within the
-                 <code>.accordion-body</code>, though the transition does limit
-                 overflow.
+                 No we do not charge any fee for our website
                </div>
              </div>
            </div>
@@ -508,7 +511,7 @@
                  aria-expanded="false"
                  aria-controls="collapseThree"
                >
-                 Accordion Item #3
+                 Do you charge money for it
                </button>
              </h2>
              <div
@@ -517,15 +520,7 @@
                data-bs-parent="#accordionExample"
              >
                <div class="accordion-body">
-                 <strong>This is the third item's accordion body.</strong> It
-                 is hidden by default, until the collapse plugin adds the
-                 appropriate classes that we use to style each element. These
-                 classes control the overall appearance, as well as the showing
-                 and hiding via CSS transitions. You can modify any of this
-                 with custom CSS or overriding our default variables. It's also
-                 worth noting that just about any HTML can go within the
-                 <code>.accordion-body</code>, though the transition does limit
-                 overflow.
+                 No we do not charge any money for any of our services its all completely free
                </div>
              </div>
            </div>
@@ -539,7 +534,7 @@
                  aria-expanded="false"
                  aria-controls="collapseFour"
                >
-                 Accordion Item #2
+                 Do you assist in getting the service
                </button>
              </h2>
              <div
@@ -548,15 +543,9 @@
                data-bs-parent="#accordionExample"
              >
                <div class="accordion-body">
-                 <strong>This is the second item's accordion body.</strong> It
-                 is hidden by default, until the collapse plugin adds the
-                 appropriate classes that we use to style each element. These
-                 classes control the overall appearance, as well as the showing
-                 and hiding via CSS transitions. You can modify any of this
-                 with custom CSS or overriding our default variables. It's also
-                 worth noting that just about any HTML can go within the
-                 <code>.accordion-body</code>, though the transition does limit
-                 overflow.
+                 No we only assist you in contacting them and we do not
+                 take responsibility for anything other than getting the 
+                 two parties in contact with each other
                </div>
              </div>
            </div>
@@ -570,7 +559,7 @@
                  aria-expanded="false"
                  aria-controls="collapseFive"
                >
-                 Accordion Item #3
+                 Is this completely free
                </button>
              </h2>
              <div
@@ -579,89 +568,28 @@
                data-bs-parent="#accordionExample"
              >
                <div class="accordion-body">
-                 <strong>This is the third item's accordion body.</strong> It
-                 is hidden by default, until the collapse plugin adds the
-                 appropriate classes that we use to style each element. These
-                 classes control the overall appearance, as well as the showing
-                 and hiding via CSS transitions. You can modify any of this
-                 with custom CSS or overriding our default variables. It's also
-                 worth noting that just about any HTML can go within the
-                 <code>.accordion-body</code>, though the transition does limit
-                 overflow.
+                 Yes this is completely free for all
                </div>
              </div>
            </div>
          </div>
-         <small><a href="">Read more FAQ -></a></small>
+         <small>
+           <a href="" style="color: #004700;">
+             Read more FAQ ->
+           </a></small>
        </div>
      </div>
    </section>
    <!-- End FAQ Section -->
-   <!-- Start contact us Section -->
-   <section>
-     <div class="container">
-       <div class="row align-items-center">
-         <div class="col-md-12">
-           <h3>
-             Contact us
-           </h3>
-           <p>
-             Do you have any queries or trouble using our website ? Please reach us out at LocalBusinessDirectory@gmail.com. 
-             You can also find us on Instagram, Twitter or LinkedIn.  
-           </p>
-         </div>
-       </div>
-     </div>
-   </section>
-   <!-- End contact us Section -->
-</template>
-
-<script setup>
-import { onMounted, ref } from "vue";
-import VueSelect from "vue3-select";
-import axios from "axios";
-import Swal from "sweetalert2";
-
-let categories = ref([]);
-let cities = ref([]);
-let category = ref(null);
-let location = ref(null);
-
-function search() {
- const baseUrl = '/jobs/';
- const params = new URLSearchParams();
-
- if (category?.value?.category_name) {
-   params.append('category', category.value.category_name);
- }
-
- if (location?.value?.name_en) {
-   params.append('location', location.value.name_en);
- }
-
- const url = params.toString() 
-   ? `${baseUrl}?${params.toString()}`
-   : baseUrl;
-
- window.open(url, '_blank');
-}
-
-onMounted(() => {
-   axios
-       .get("/category")
-       .then((response) => {
-           categories.value = response.data.categories;
-       })
-       .catch((error) => {
-           console.error(error);
-       });
-   axios
-       .get("/cities")
-       .then((response) => {
-           cities.value = response.data.cities;
-       })
-       .catch((error) => {
-           console.error(error);
-       });
-});
-</script>
+  </template>
+  
+  <script>
+  
+  
+  export default {
+  name: 'HomeView',
+  components: {
+   
+  }
+  }
+  </script>
