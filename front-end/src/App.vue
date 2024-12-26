@@ -48,35 +48,47 @@
           </div>
           <div class="col-md-2">
             <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-          </ul>
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Home
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Home</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">About</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Developers</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">About</li>
+            </ul>
         </div>
           <div class="col-md-2">
             <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-          </ul>
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Links
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Explore</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Resources</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Regulations</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Blog</li>
+            </ul>
         </div>
           <div class="col-md-2">
             <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-          </ul>
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Socials
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Github</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">LinkedIn</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Instagram</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Twitter</li>
+            </ul>
         </div>
           <div class="col-md-2">
             <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-          </ul>
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Others
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Help and support</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Complaints</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Terms of use</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Contact us</li>
+            </ul>
         </div>
         </div>
         <div class="row mt-4">
@@ -89,6 +101,7 @@
     <LoginView />
     <registerView />
 </template>
+
 
 <script setup>
 import LoginView from './components/Login';
