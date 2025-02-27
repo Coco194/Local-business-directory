@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
-    <a class="navbar-brand" href="/">LBD</a>
+    <a class="navbar-brand" href="/">🌱 LBD</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,7 +11,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/jobs">All Jobs</a>
+          <a class="nav-link" href="/job/ExploreView">Explore</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,10 +51,12 @@
               <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
                 Home
               </li>
-              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Home</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">
+                <a href="/">Home</a>
+              </li>
               <li class="mt-1 mb-1 text-secondary" style="list-style: none;">About</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Careers</li>
               <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Developers</li>
-              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">About</li>
             </ul>
         </div>
           <div class="col-md-2">
@@ -62,7 +64,9 @@
               <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
                 Links
               </li>
-              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Explore</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">
+                <a href="/job/ExploreView">Explore</a>
+              </li>
               <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Resources</li>
               <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Regulations</li>
               <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Blog</li>
