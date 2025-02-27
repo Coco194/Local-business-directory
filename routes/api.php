@@ -8,7 +8,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::get('/category', [App\Http\Controllers\Category\CategoryController::class, 'getCategories']);
-Route::get('/cities', [App\Http\Controllers\Location\LocationController::class, 'getCities']);
-Route::post('/create-job-post', [App\Http\Controllers\JobPost\JobPostController::class, 'createJobPost']);
-Route::get('/job-posts', [App\Http\Controllers\JobPost\JobPostController::class, 'index']);
+Route::post('/register', [App\Http\Controllers\AuthController::class, 'register']);
+Route::post('/login', [App\Http\Controllers\AuthController::class, 'login']);
