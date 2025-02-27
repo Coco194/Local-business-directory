@@ -10,6 +10,12 @@ import 'vue3-select/dist/vue3-select.css'
 // Configure Axios
 axios.defaults.baseURL = 'http://127.0.0.1:8000/api';
 const storagePath = 'http://127.0.0.1:8000/storage/';
+
+const token = localStorage.getItem('token'); // Or wherever your token is stored
+
+if (token) {
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+}
 // Create the app instance
 const app = createApp(App);
 
