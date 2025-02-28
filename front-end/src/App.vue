@@ -81,7 +81,7 @@
         </div>
         </div>
         <div class="row mt-4">
-          <div class="col-md-6">© 2024 LocalFind/div>
+          <div class="col-md-6">© 2024 LocalFind</div>
           <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
         </div>
       </div>
