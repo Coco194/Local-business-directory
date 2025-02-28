@@ -40,52 +40,52 @@
   <router-view/>
 
       <!-- Start Footer Section -->
-      <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="/assets/img/logo.png" width="190px">
-          </div>
-          <div class="col-md-2">
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item fw-bold">More From LocalFind</li>
-            <li class="list-group-item">Boot Your Post</li>
-            <li class="list-group-item">Membership</li>
-            <li class="list-group-item">Banner Ad</li>
-          </ul>
-        </div>
-          <div class="col-md-2">
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item fw-bold">About LocalFind</li>
-            <li class="list-group-item">About Us</li>
-            <li class="list-group-item">Terms and Conditions</li>
-            <li class="list-group-item">Privacy Policy</li>
-          </ul>
-        </div>
-          <div class="col-md-2">
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item fw-bold">Help & Support</li>
-            <li class="list-group-item">FAQ</li>
-            <li class="list-group-item">Contact Us</li>
-            <li class="list-group-item">Stay Safe</li>
-          </ul>
-        </div>
-          <div class="col-md-2">
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item fw-bold">Guides</li>
-            <li class="list-group-item">JobPost Guide</li>
-            <li class="list-group-item">Reviews</li>
-            <li class="list-group-item">Ratings</li>
-            <li class="list-group-item">Official Blog</li>
-          </ul>
-        </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-6">© 2024 LocalFind</div>
-          <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
-        </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/assets/img/logo.png" width="190px">
       </div>
-     </footer>
+      <div class="col-md-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bold">More From LocalFind</li>
+          <li class="list-group-item "><a class="text-dark" href="#">Boost Your Post</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Membership</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Banner Ad</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bold">About LocalFind</li>
+          <li class="list-group-item"><a class="text-dark" href="#">About Us</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Terms and Conditions</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bold">Help & Support</li>
+          <li class="list-group-item"><a class="text-dark" href="#">FAQ</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Contact Us</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Stay Safe</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bold">Guides</li>
+          <li class="list-group-item"><a class="text-dark" href="#">JobPost Guide</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Reviews</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Ratings</a></li>
+          <li class="list-group-item"><a class="text-dark" href="#">Official Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">© 2024 LocalFind</div>
+      <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
+    </div>
+  </div>
+</footer>
     <!-- End Footer Section -->
     <LoginView />
     <registerView />
