@@ -1,42 +1,35 @@
 <template>
   <!-- Start Header Section -->
   <section>
-   <div class="container" style="margin-top: 5rem; margin-bottom: 10rem;">
-     <div class="row align-items-center">
-       <div class="col-md-6">
-         <h1>
-           Search, compare, connect with local businesses for all your needs.
-         </h1>
-         <p style="font-size: 1.125rem; color: #6a6a6a;">
-           Your one stop place for all your local business needs whether
-           you’re a customer or an employer.
-         </p>
-         <div class="input-group mb-3">
-           <input
-             type="text"
-             class="form-control"
-             placeholder="Are you looking for..."
-           />
-           <select name="" id="" class="form-control">
-             <option value="">Kegalle</option>
-             <option value="">Colombo</option>
-           </select>
-           <button class="btn btn-primary" type="button" id="button-addon2">
-             Search
-           </button>
-         </div>
-         <small>Ready to list your business ? <a href="">list now</a></small>
-       </div>
-       <div class="col-md-6 text-center">
-         <img
-           width="80%"
-           src="https://images.business.com/app/uploads/2011/06/12131215/Leadership-Skills.png"
-           alt=""
-         />
-       </div>
-     </div>
-   </div>
- </section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="mb-2">
+              Search, compare, connect with local businesses for all your needs.
+            </h2>
+            <p class="mb-4">
+              Your one stop place for all your local business needs whether
+              you’re a customer or an employer.
+            </p>
+            <div class="input-group mb-3">
+              <VueSelect v-model="category" placeholder="Are you looking for...?" style="width: 300px;" :options="categories" label="category_name"></VueSelect>
+              <VueSelect v-model="location" placeholder="Location" style="width: 130px;" :options="cities" label="name_en"></VueSelect>
+              <button @click="search()" style="border-radius: 3px !important;" class="btn btn-primary" type="button" id="button-addon2">
+                Search
+              </button>
+            </div>
+            <small>Ready to list your business ? <a href="">list now</a></small>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              width="80%"
+              src="https://images.business.com/app/uploads/2011/06/12131215/Leadership-Skills.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
  <!-- End Header Section -->
 
  <!-- Start Services Section -->
@@ -44,7 +37,7 @@
    <div class="container">
      <div class="row">
        <div class="col-md-4">
-         <div class="icon"></div>
+         <img src="/assets/img/rocket.png" width="30px" class="mb-2">
          <h6>Fast & easy advertising</h6>
          <p class="text-secondary">
            Reach local customers quickly and advertise your business in
@@ -52,7 +45,7 @@
          </p>
        </div>
        <div class="col-md-4">
-         <div class="icon"></div>
+         <img src="/assets/img/star.png" width="30px" class="mb-2">
          <h6>Top rated services</h6>
          <p class="text-secondary">
            Experience the best and quality services, discover top rated
@@ -60,7 +53,7 @@
          </p>
        </div>
        <div class="col-md-4">
-         <div class="icon"></div>
+        <img src="/assets/img/trophy.png" width="30px" class="mb-2">
          <h6>Industry professionals</h6>
          <p class="text-secondary">
            Leave the work to the experts, hire the top talent for guaranteed
@@ -72,331 +65,35 @@
  </section>
  <!-- End Services Section -->
 
- <!-- Start Categories Section -->
- <section
-   id="carouselExampleControlsNoTouching"
-   class="carousel slide mt-4"
-   data-bs-touch="false"
- >
-   <div class="carousel-inner" style="margin-top: 10rem">
-     <div class="container">
-       <h2>Professional services</h2>
-       <div class="carousel-item active">
-         <div class="row row-cols-2 row-cols-md-4 g-4">
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <div class="carousel-item active">
-         <div class="row row-cols-2 row-cols-md-4 g-4">
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-   <button
-     class="carousel-control-prev"
-     type="button"
-     data-bs-target="#carouselExampleControlsNoTouching"
-     data-bs-slide="prev"
-   >
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Previous</span>
-   </button>
-   <button
-     class="carousel-control-next"
-     type="button"
-     data-bs-target="#carouselExampleControlsNoTouching"
-     data-bs-slide="next"
-   >
-     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Next</span>
-   </button>
- </section>
- <!-- End Categories Section -->
+    <!-- Start Categories Section -->
 
- <!-- Start Business Section -->
- <section
+    <section
    id="bisiness-section"
    class="carousel slide mt-4"
    data-bs-touch="false"
  >
    <div class="carousel-inner"  style="margin-top: 10rem">
      <div class="container">
-       <h2>Popular businesses</h2>
+       <h2>Professional Services</h2>
        <div class="carousel-item active">
-         <div class="row row-cols-2 row-cols-md-4 g-4">
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Vito’s pizza</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <div class="carousel-item active">
-         <div class="row row-cols-2 row-cols-md-4 g-4">
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <div class="col">
-             <div class="card">
-               <img
-                 src="https://picsum.photos/200"
-                 class="card-img-top"
-                 alt="..."
-               />
-               <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">
-                   This is a longer card with supporting text below as a
-                   natural lead-in to additional content. This content is a
-                   little bit longer.
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+              <div class="col" v-for="category in categories">
+                <div class="card" @click="search(category.category_name)" style="cursor: pointer">
+                  <img
+                    :src="category.category_image"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">{{ category.category_name }}</h5>
+                    <p class="card-text">
+                      {{ category.category_description }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
      </div>
    </div>
    <button
@@ -418,6 +115,60 @@
      <span class="visually-hidden">Next</span>
    </button>
  </section>
+    <section
+      id="carouselExampleControlsNoTouching"
+      class="carousel slide mt-4"
+      data-bs-touch="false"
+    >
+      <div class="carousel-inner">
+        <div class="container">
+          <h3>Popular businesses</h3>
+          <div class="carousel-item active">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+              <div class="col" v-for="jobPost in jobPosts.data">
+                <div class="card" style="cursor: pointer">
+                  <img
+                    :src="$storagePath + jobPost.images[0].file_path"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">{{ jobPost.job_title }}</h5>
+                    <p class="card-text">
+                      {{ truncateWords(jobPost.job_description,10) }}
+                    </p>
+                  </div>
+                  <RouterLink :to="'/job?id=' + jobPost.job_post_id" class="btn stretched-link"></RouterLink>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- End Categories Section -->
+
+
+ <!-- Start Business Section -->
+
  <!-- End Business Section -->
    <!-- Start Features Section -->
    <section>
@@ -437,7 +188,7 @@
            </ul>
          </div>
          <div class="col-md-5 text-center">
-           <img class="img" width="80%" src="" alt="" />
+           <img class="img" width="80%" src="https://www.totodreammarketing.com/wp-content/uploads/2021/03/seo-graphic.jpg" alt="" />
          </div>
        </div>
      </div>
@@ -446,16 +197,17 @@
 
    <hr width="77.5%" style = "margin: 8rem auto 8rem auto; color: #8a8a8a;">
 
+
    <!-- Start Features Section -->
    <section>
      <div class="container">
        <div class="row align-items-center">
          <div class="col-md-5 text-center">
-           <img class="img" width="80%" src="" alt="" />
+           <img class="img" width="80%" src="https://newadventureweb.com/wp-content/uploads/2021/01/Google-Map-Results.jpg" alt="" />
          </div>
          <div class="col-md-7">
            <p style="font-size: 1rem; color: #804306;">Trustworthy</p>
-           <h1>Let the professionals in the industry do the work for you</h1>
+           <h1>Easily search and compare local businesses for your needs</h1>
            <p style="font-size: 1.125rem; color: #6a6a6a; margin-bottom: 2rem;">
              We have partnered with some of the best service providers from all over 
              the island with cheap but high quality service.
@@ -581,32 +333,75 @@
    </div>
  </section>
  <!-- End FAQ Section -->
-<!-- Start contact us Section -->
-      <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-12">
-            <h3 class="mb-3">
-              Contact us
-            </h3>
-            <p style="font-size: 1.125rem; color: #6a6a6a; margin-bottom: 2rem;">
-              Do you have any queries or trouble using our website ? Please reach us out at LocalBusinessDirectory@gmail.com. 
-              You can also find us on <a href="#">Instagram</a> , <a href="#">Twitter</a> or <a href="#">LinkedIn</a> .  
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- End contact us Section -->
 </template>
 
-<script>
+<script setup>
+import { onMounted, ref } from "vue";
+import VueSelect from "vue3-select";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { useRouter } from 'vue-router';
+const router = useRouter();
 
+let categories = ref([]);
+let cities = ref([]);
+let jobPosts = ref([]);
+let category = ref(null);
+let location = ref(null);
 
-export default {
-name: 'HomeView',
-components: {
- 
+function search(categoryName = null) {
+  const baseUrl = '/jobs/';
+  const params = new URLSearchParams();
+
+  if(categoryName != null){
+    params.append('category', categoryName);
+  }
+
+  if (category?.value?.category_name) {
+    params.append('category', category.value.category_name);
+  }
+
+  if (location?.value?.name_en) {
+    params.append('location', location.value.name_en);
+  }
+
+  const url = params.toString() 
+    ? `${baseUrl}?${params.toString()}`
+    : baseUrl;
+
+    router.push(url);
 }
+
+onMounted(() => {
+    axios
+        .get("/category")
+        .then((response) => {
+            categories.value = response.data.categories;
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+    axios
+        .get("/cities")
+        .then((response) => {
+            cities.value = response.data.cities;
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+    axios
+        .get("/job-posts")
+        .then((response) => {
+          jobPosts.value = response.data.jobPosts;
+          
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+});
+
+function truncateWords(text, limit) {
+      if (!text) return "";
+      return text.split(" ").slice(0, limit).join(" ") + (text.split(" ").length > limit ? "..." : "");
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
-    <a class="navbar-brand" href="/">🌱 LBD</a>
+    <RouterLink class="navbar-brand" to="/"><img src="/assets/img/logo.png" width="190px"></RouterLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,19 +15,20 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Account
+           {{ user != null ? user.name : 'Account' }}
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" v-if="user == null">
             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Sign In</a></li>
             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Sign Up</a></li>
-            <!-- <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+          <ul class="dropdown-menu" v-else>
+            <li><a class="dropdown-item" href="#" @click="logOut">Log Out</a></li>
           </ul>
         </li>
       </ul>
       <form class="d-flex" role="search">
         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-        <a href="/post-job" class="btn btn-outline-success" type="submit">Post a Job</a>
+        <RouterLink to="/post-job" class="btn btn-outline-success" type="submit">Post a Job</RouterLink>
       </form>
     </div>
   </div>
@@ -43,8 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1>LOGO</h1>
-            <h5>Business Directory</h5>
+            <img src="/assets/img/logo.png" width="190px">
           </div>
           <div class="col-md-2">
             <ul class="list-group list-group-flush">
@@ -111,4 +111,11 @@
 import LoginView from './components/Login';
 import registerView from './components/Register';
 
+const user = JSON.parse(localStorage.getItem('user')) || null;
+
+function logOut(){
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
+  location.reload();
+}
 </script>
