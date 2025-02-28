@@ -11,7 +11,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/jobs">All Jobs</a>
+          <a class="nav-link" href="/job/ExploreView">Explore</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,19 +40,65 @@
   <router-view/>
 
       <!-- Start Footer Section -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="/assets/img/logo.png" width="250px">
-      </div>
-      <div class="col-md-2">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item fw-bold">More From LocalFind</li>
-          <li class="list-group-item "><a class="text-dark" href="#">Boost Your Post</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Membership</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Banner Ad</a></li>
-        </ul>
+      <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/assets/img/logo.png" width="190px">
+          </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Home
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">
+                <a href="/">Home</a>
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">About</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Careers</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Developers</li>
+            </ul>
+        </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Links
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">
+                <a href="/job/ExploreView">Explore</a>
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Resources</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Regulations</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Blog</li>
+            </ul>
+        </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Socials
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Github</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">LinkedIn</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Instagram</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Twitter</li>
+            </ul>
+        </div>
+          <div class="col-md-2">
+            <ul class="list-group list-group-flush">
+              <li class="mb-2 fs-5 fw-normal" style="list-style: none;">
+                Others
+              </li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Help and support</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Complaints</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Terms of use</li>
+              <li class="mt-1 mb-1 text-secondary" style="list-style: none;">Contact us</li>
+            </ul>
+        </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">© 2024 Business Directory</div>
+          <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
+        </div>
       </div>
       <div class="col-md-2">
         <ul class="list-group list-group-flush">
@@ -90,6 +136,7 @@
     <LoginView />
     <registerView />
 </template>
+
 
 <script setup>
 import LoginView from './components/Login';
