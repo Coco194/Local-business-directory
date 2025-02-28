@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <RouterLink class="navbar-brand" to="/"><img src="/assets/img/logo.png" width="190px"></RouterLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/job/ExploreView">Explore</a>
+          <a class="nav-link" href="/jobs">All Jobs</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="/assets/img/logo.png" width="190px">
+            <img src="/assets/img/logo.png" width="250px">
           </div>
           <div class="col-md-2">
             <ul class="list-group list-group-flush">
@@ -100,38 +100,7 @@
           <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
         </div>
       </div>
-      <div class="col-md-2">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item fw-bold">About LocalFind</li>
-          <li class="list-group-item"><a class="text-dark" href="#">About Us</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Terms and Conditions</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item fw-bold">Help & Support</li>
-          <li class="list-group-item"><a class="text-dark" href="#">FAQ</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Contact Us</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Stay Safe</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item fw-bold">Guides</li>
-          <li class="list-group-item"><a class="text-dark" href="#">JobPost Guide</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Reviews</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Ratings</a></li>
-          <li class="list-group-item"><a class="text-dark" href="#">Official Blog</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-md-6">© 2024 LocalFind</div>
-      <div class="col-md-6"><a href="#" style="float: right;">Privacy policy</a></div>
-    </div>
-  </div>
-</footer>
+     </footer>
     <!-- End Footer Section -->
     <LoginView />
     <registerView />
