@@ -44,7 +44,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img src="/assets/img/logo.png" width="190px">
+        <img src="/assets/img/logo.png" width="250px">
       </div>
       <div class="col-md-2">
         <ul class="list-group list-group-flush">
