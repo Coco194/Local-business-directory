@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CreateJobView from '../views/job/CreateJobView.vue'
+import JobsView from '../views/job/JobsView.vue'
+import JobView from '../views/job/JobView.vue'
 import { isAuthenticated } from '@/store/auth';
 import Swal from "sweetalert2";
 
@@ -10,19 +13,29 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/job/ExploreView',
-    name: 'explore',
-    component: AboutView
+    path: '/post-job',
+    name: 'post-job',
+    component: CreateJobView,
+    meta: { requiresAuth: true }
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/jobs',
+    name: 'jobs',
+    component: JobsView
+  },
+  {
+    path: '/job',
+    name: 'job',
+    component: JobView
+  },
+  {
+    path: '/explore',
+    name: 'explore',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/ExploreView.vue')
   }
-
 ]
 
 const router = createRouter({
